@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,5 +28,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
   },
-  "homepage": "https://ldw2730.github.io/fv/"
+  "homepage": "https://ldw2730.github.io/fv"
 }

@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/my-app/' // repository 이름을 base URL로 설정
+  base: '/' // 루트 경로로 설정
 })

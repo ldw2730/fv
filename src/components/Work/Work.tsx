@@ -1,24 +1,28 @@
 import React from 'react';
 import './Work.css';
+// 이미지 import
+import slotMachineImage from '../../assets/images/slot-machine.png';
+import rouletteImage from '../../assets/images/roulette.png';
+import erHanaImage from '../../assets/images/er-hana.png';
 
 const Work: React.FC = () => {
   const works = [
     {
       id: 1,
       title: 'SLOT MACHINE EVENT',
-      image: '/images/slot-machine.png',
+      image: slotMachineImage,
       category: '게임 디자인'
     },
     {
       id: 2,
       title: '100% 확률 ROULETTE EVENT',
-      image: '/images/roulette.png',
+      image: rouletteImage,
       category: '이벤트 디자인'
     },
     {
       id: 3,
       title: 'ER Hana',
-      image: '/images/er-hana.png',
+      image: erHanaImage,
       category: '브랜드 디자인'
     }
   ];
@@ -36,7 +40,7 @@ const Work: React.FC = () => {
           {works.map(work => (
             <div key={work.id} className="work-item">
               <div className="work-image">
-                <img src={work.image} alt={work.title} />
+                <img src={work.image} alt={work.title} loading="lazy" />
               </div>
               <div className="work-info">
                 <h3>{work.title}</h3>

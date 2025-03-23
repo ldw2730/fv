@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light only;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +16,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   color: #333;
+  background-color: #ffffff;
+  /* 다크 모드 비활성화 */
+  color-scheme: light only;
 }
 
 .App {
   min-height: 100vh;
+  background-color: #ffffff;
 }
 
 main {
   padding-top: 60px; /* Header height */
+  background-color: #ffffff;
 }
 
 /* Global section styles */
@@ -58,6 +67,7 @@ main {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -94,4 +104,12 @@ main {
 
 .read-the-docs {
   color: #888;
+}
+
+/* 다크 모드 비활성화를 위한 추가 설정 */
+@media (prefers-color-scheme: dark) {
+  body, #root, .App, main {
+    background-color: #ffffff;
+    color: #333;
+  }
 }

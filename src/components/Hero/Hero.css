@@ -3,6 +3,7 @@
   min-height: 100vh;
   position: relative;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .hero-content {
@@ -16,6 +17,7 @@
   padding: 0 2rem;
   padding-left: calc(50% + 2rem);
   transition: all 0.4s ease-in-out;
+  background-color: #ffffff;
 }
 
 .hero-background {
@@ -105,5 +107,33 @@
   .hero-additional p {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 다크 모드에서도 밝은 배경 유지 */
+@media (prefers-color-scheme: dark) {
+  .hero {
+    background-color: #ffffff;
+  }
+  
+  .hero-content {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .hero-subtitle {
+    color: #333;
+  }
+  
+  .hero-title {
+    color: #000;
+  }
+  
+  .hero-description {
+    color: #E85C41;
+  }
+  
+  .hero-additional p {
+    color: #666;
   }
 } 

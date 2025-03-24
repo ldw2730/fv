@@ -9,22 +9,28 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = (path: string) => {
+    setIsMenuOpen(false);
+    location.href = `#${path}`;
+  };
+
   return (
     <header className="header">
       <nav className="nav-container">
-        <div className="nav-left">
-          <Link to="/" className="nav-logo">FUTURE VISION</Link>
+        
+        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+          <Link to="/xr-solution" className="nav-link" onClick={() => handleLinkClick('xr-solution')}>XR-SOLUTION</Link>
+          <Link to="/work" className="nav-link" onClick={() => handleLinkClick('work')}>WORK</Link>
+          <Link to="/contact" className="contact-btn" onClick={() => handleLinkClick('contact')}>Contact Us</Link>
+        </div>
+
+        <Link to="/" className="nav-logo">FUTURE VISION</Link>
           <button className="hamburger-btn" onClick={toggleMenu} aria-label="메뉴 열기">
             <span></span>
             <span></span>
             <span></span>
           </button>
-        </div>
-        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          <Link to="/xr-solution" className="nav-link" onClick={() => setIsMenuOpen(false)}>XR-SOLUTION</Link>
-          <Link to="/work" className="nav-link" onClick={() => setIsMenuOpen(false)}>WORK</Link>
-          <Link to="/contact" className="contact-btn" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-        </div>
+
       </nav>
     </header>
   );

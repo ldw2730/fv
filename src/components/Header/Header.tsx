@@ -19,6 +19,7 @@ const Header: React.FC = () => {
       <nav className="nav-container">
         
         <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+          <Link to="/" className="nav-link" onClick={() => handleLinkClick('')}>HOME</Link>
           <Link to="/xr-solution" className="nav-link" onClick={() => handleLinkClick('xr-solution')}>XR-SOLUTION</Link>
           <Link to="/work" className="nav-link" onClick={() => handleLinkClick('work')}>WORK</Link>
           <Link to="/contact" className="contact-btn" onClick={() => handleLinkClick('contact')}>Contact Us</Link>

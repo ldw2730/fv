@@ -62,10 +62,11 @@ main {
 }
 
 #root {
-  width: 1920px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .logo {

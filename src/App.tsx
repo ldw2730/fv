@@ -6,6 +6,7 @@ import XRSolution from './components/XRSolution/XRSolution';
 import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import './App.css';
+import Paragraph from './components/Paragraph/Pragraph';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <main>
           <Hero />
+          <Paragraph />
           <XRSolution />
           <Work />
           <Contact />

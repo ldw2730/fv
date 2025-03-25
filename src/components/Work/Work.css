@@ -1,18 +1,86 @@
 .work {
   padding: 6rem 2rem;
   background-color: #f8f8f8;
+  width: 100%;
+  overflow: hidden;
 }
 
 .work-content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
 }
 
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 4rem;
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.work-slider {
+  margin: 4rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* 슬라이더 스타일 커스터마이징 */
+.work-slider .slick-slide {
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.work-slider .slick-track {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.work-slider .slick-slide > div {
+  height: 100%;
+}
+
+.work-slider .slick-dots {
+  bottom: -40px;
+}
+
+.work-slider .slick-dots li button:before {
+  font-size: 10px;
+  color: #E85C41;
+}
+
+.work-slider .slick-dots li.slick-active button:before {
+  color: #E85C41;
+}
+
+.work-slider .slick-prev,
+.work-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.work-slider .slick-prev {
+  left: -20px;
+}
+
+.work-slider .slick-next {
+  right: -20px;
+}
+
+.work-slider .slick-prev:before,
+.work-slider .slick-next:before {
+  font-size: 40px;
+  color: #E85C41;
 }
 
 .work-item {
@@ -21,6 +89,8 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin: 1rem 0;
+  height: 100%;
 }
 
 .work-item:hover {
@@ -64,14 +134,82 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .work-grid {
-    grid-template-columns: 1fr;
+/* 태블릿 디바이스 */
+@media (max-width: 1024px) {
+  .work {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .work-slider {
+    margin: 3rem 0;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .work-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* 모바일 디바이스 */
+@media (max-width: 768px) {
+  .work {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .work-slider {
+    margin: 2rem 0;
+  }
+
+  .work-slider .slick-prev,
+  .work-slider .slick-next {
+    display: none;
+  }
+
+  .work-item {
+    margin: 0.5rem 0;
+  }
+
+  .work-info {
+    padding: 1rem;
+  }
+
+  .work-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .work-info p {
+    font-size: 0.8rem;
+  }
+}
+
+/* 작은 모바일 디바이스 */
+@media (max-width: 480px) {
+  .work {
+    padding: 2rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+
+  .work-slider {
+    margin: 1.5rem 0;
   }
 } 

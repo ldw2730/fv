@@ -7,6 +7,7 @@ import Work from './components/Work/Work';
 import Contact from './components/Contact/Contact';
 import './App.css';
 import Paragraph from './components/Paragraph/Pragraph';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <XRSolution />
           <Work />
           <Contact />
+          <Footer />
         </main>
       </div>
     </Router>

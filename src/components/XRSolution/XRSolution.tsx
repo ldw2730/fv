@@ -6,25 +6,25 @@ const XRSolution: React.FC = () => {
     <section className="xr-solution" id="xr-solution">
       <div className="xr-content">
         <h2 className="section-title">XR-SOLUTION</h2>
-        <p className="section-description">
-          사용자는 실재감 공간에 제품을 물리와 배치됩니다.<br />
-          색상과 움직임 선택할 수 있습니다. 제품이 내 공간에 어떻게 어울릴지 확인합니다.
+        <p className="section-description" style={{fontWeight: 'bold',color: '#4D4D4D'}}>
+          사용자는 실제 공간에 제품을 불러와 배치됩니다.<br />
+          색상과 옵션을 선택할 수 있습니다. 제품이 내 공간에 어떻게 어울릴지 확인합니다.
         </p>
         
         <div className="solution-features">
           <div className="feature">
-            <h3>물리형 경험</h3>
-            <p>고객은 다양한 프로젝트 참여자, AR 및 VR에서 새롭게 하여 경험합니다.</p>
+            <h3>몰입형 경험</h3>
+            <p>고객은 단순한 쇼핑을 넘어서, AR 공간에서 제품을 미리 경험합니다.</p>
           </div>
           
           <div className="feature">
             <h3>간편한 체험</h3>
-            <p>현장 방문없이 VR 공간에서 제품을 직접 체험하고 확인할 수 있습니다.</p>
+            <p>복잡한 장비 없이도 스마트폰 하나로 언제 어디서나 내 공간에 제품을 직접 배치하고 체험할 수 있습니다.</p>
           </div>
           
           <div className="feature">
             <h3>웹 기반 서비스</h3>
-            <p>고객의 요청 사항을 반영하여 제작한 가상공간을 웹에서 바로 확인할 수 있습니다.</p>
+            <p>고객이 최종 결과물을 직접 체험할 기회를 제공함으로써 구매 여부를 판단하는데 도움을 줍니다.</p>
           </div>
         </div>
       </div>

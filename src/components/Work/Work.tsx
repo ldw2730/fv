@@ -1,32 +1,27 @@
 import React from 'react';
-import './Work.css';
-// 이미지 import
-import slotMachineImage from '../../assets/images/slot-machine.png';
-import rouletteImage from '../../assets/images/roulette.png';
-import erHanaImage from '../../assets/images/er-hana.png';
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './Work.css';
 
 const Work: React.FC = () => {
   const works = [
     {
       id: 1,
       title: 'SLOT MACHINE EVENT',
-      image: slotMachineImage,
+      image: '/images/slot-machine.png',
       category: '게임 디자인'
     },
     {
       id: 2,
       title: '100% 확률 ROULETTE EVENT',
-      image: rouletteImage,
+      image: '/images/roulette.png',
       category: '이벤트 디자인'
     },
     {
       id: 3,
       title: 'ER Hana',
-      image: erHanaImage,
+      image: '/images/er-hana.png',
       category: '브랜드 디자인'
     }
   ];
@@ -54,6 +49,7 @@ const Work: React.FC = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false
         }
       }
     ]
@@ -64,8 +60,8 @@ const Work: React.FC = () => {
       <div className="work-content">
         <h2 className="section-title">WORK</h2>
         <p className="section-description">
-          FUTURE VISION은 VR과 AR 기술을 통해 현실과 디지털 세계를 자연스럽게 융합하여<br />
-          사용자에게 몰입감 있는 모든 시각적 경험적을 제공을 제공합니다.
+            FUTURE VISION은 VR과 AR 기술을 통해 현실과 디지털 세계를 자연스럽게 융합하여
+            사용자에게 몰입감 있는 시각적 상호작용 경험을 제공합니다.
         </p>
         
         <div className="work-slider">

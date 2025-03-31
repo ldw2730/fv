@@ -8,7 +8,7 @@
 
 .hero-content {
   flex: 1;
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
   z-index: 1;
   display: flex;
@@ -16,6 +16,7 @@
   justify-content: center;
   padding-left: calc(50% + 2rem);
   transition: all 0.4s ease-in-out;
+  margin-right: 10%;
   
 }
 
@@ -30,17 +31,18 @@
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
   margin-bottom: 1rem;
   color: #333;
-  font-weight: 500;
   transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
+  text-align: right;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: #000;
@@ -48,11 +50,16 @@
   transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
+  text-align: right;
 }
 
-.hero-title .dot {
+.hero-title::after{
+  content: '.';
   color: #E85C41;
   transition: color 0.3s ease-in-out;
+  font-size: 3em;
+  position: absolute;
+  top: -0.6em;
 }
 
 .hero-description {
@@ -60,7 +67,7 @@
   line-height: 1.6;
   margin-bottom: 4rem;
   color: #E85C41;
-  font-weight: 500;
+  font-weight: bold;
   transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
@@ -68,16 +75,18 @@
 
 .hero-additional {
   transition: all 0.3s ease-in-out;
+  text-align: right;
 }
 
 .hero-additional p {
-  margin-bottom: 0.75rem;
-  color: #666;
+  margin-bottom: 0.3rem;
+    color: #666;
   line-height: 1.6;
   font-size: 0.95rem;
   transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
+  
 }
 
 @media (max-width: 770px) {
@@ -121,10 +130,12 @@
   
   .hero-subtitle {
     color: #333;
+    text-align: right;
   }
   
   .hero-title {
     color: #000;
+    text-align: right;
   }
   
   .hero-description {

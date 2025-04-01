@@ -8,7 +8,6 @@
 
 .hero-content {
   flex: 1;
-  max-width: 1920px;
   margin: 0 auto;
   z-index: 1;
   display: flex;
@@ -31,7 +30,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.9vw;
   font-weight: bolder;
   margin-bottom: 1rem;
   color: #333;
@@ -42,7 +41,7 @@
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 4.5vw;
   font-weight: bold;
   margin-bottom: 1.5rem;
   color: #000;
@@ -63,7 +62,6 @@
 }
 
 .hero-description {
-  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 4rem;
   color: #E85C41;
@@ -82,12 +80,14 @@
   margin-bottom: 0.3rem;
     color: #666;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 1.2vw;
   transition: all 0.3s ease-in-out;
   opacity: 1;
   transform: translateY(0);
   
 }
+
+
 
 @media (max-width: 770px) {
   .hero-content {
@@ -95,16 +95,22 @@
   }
   
   .hero-background {
-    opacity: 0;
-    transform: translateX(-100%);
+    width: 30%;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
 
   .hero-description {
     margin-bottom: 2rem;
+  }
+
+  .hero-subtitle{
+    font-size: 1rem;
+  }
+  .hero-additional p{
+    font-size: 0.65rem;
   }
 
   /* 모바일에서의 애니메이션 효과 */
@@ -114,6 +120,12 @@
   .hero-additional p {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 460px){
+  .hero-background {
+    width: 20%;
   }
 }
 

@@ -57,7 +57,9 @@
 .contact-content2-inner{
   width: fit-content;
   position: relative;
-  left: 10%;
+  left: -20%;
+  max-width: 1920px;
+  margin: auto;
 }
 
 

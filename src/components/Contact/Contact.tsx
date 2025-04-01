@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
             <h2>Contact Us</h2>
             <div>고객님의 궁금증을 해결해드립니다.</div>
             <div className="contact-button">
-                <a href="https://open.kakao.com/" target="_blank" rel="noopener noreferrer" className="kakao-btn">
+                <a href="http://pf.kakao.com/_iFQnn/chat" target="_blank" rel="noopener noreferrer" className="kakao-btn">
                     <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" 
                         alt="KakaoTalk Icon" width="24" height="24" />
                     상담하기

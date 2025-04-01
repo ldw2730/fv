@@ -1,5 +1,7 @@
 .paragraph{
-    padding:100px
+    padding:100px;
+    margin:auto;
+    max-width: 1920px;
 }
 
 .paragraph div{

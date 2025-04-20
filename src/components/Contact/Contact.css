@@ -62,4 +62,15 @@
   margin: auto;
 }
 
+@media (max-width: 700px) {
+  .contact-content2-inner h2{
+    font-size: 2rem;
+  }
+
+  .section-title{
+    font-size: 1.5rem;
+  }
+} 
+
+
 

@@ -13,7 +13,7 @@
   transition: all 0.4s ease-in-out;
   margin-right: 10%;
   position: relative;
-  min-width: 320px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* 수직 정렬 */

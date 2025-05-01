@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Work.css';
-import { works } from '../../data/workList.json';
+
+interface WorkItem {
+  id: number;
+  title: string;
+  image: string;
+  category: string;
+}
 
 const Work: React.FC = () => {
+
+  const [works, setWorks] = useState<WorkItem[]>([]);
+
+  useEffect(() => {
+    const fetchWorks = async () => {
+      try {
+        const response = await fetch('https://raw.githubusercontent.com/ldw2730/fv/gh-pages/workList.json');
+        const data = await response.json();
+        setWorks(data.works);
+      } catch (error) {
+        console.error('Error fetching works:', error);
+      }
+    };
+
+    fetchWorks();
+  }, []);
+
   const sliderSettings = {
     dots: true,
     infinite: true,

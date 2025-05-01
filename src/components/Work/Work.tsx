@@ -3,29 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Work.css';
+import { works } from '../../data/workList.json';
 
 const Work: React.FC = () => {
-  const works = [
-    {
-      id: 1,
-      title: 'SLOT MACHINE EVENT',
-      image: '/images/slot-machine.png',
-      category: '게임 디자인'
-    },
-    {
-      id: 2,
-      title: '100% 확률 ROULETTE EVENT',
-      image: '/images/roulette.png',
-      category: '이벤트 디자인'
-    },
-    {
-      id: 3,
-      title: 'ER Hana',
-      image: '/images/er-hana.png',
-      category: '브랜드 디자인'
-    }
-  ];
-
   const sliderSettings = {
     dots: true,
     infinite: true,

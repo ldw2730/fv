@@ -16,7 +16,7 @@ function App() {
         <Header />
         <main>
           <Hero />
-          <Paragraph />
+          {/* <Paragraph /> */}
           <XRSolution />
           <Work />
           <Contact />

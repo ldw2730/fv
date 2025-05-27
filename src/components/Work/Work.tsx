@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Work.css';
 import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown';
 
 interface WorkItem {
   id: number;
@@ -149,7 +150,9 @@ const Work: React.FC = () => {
         {selectedWork && (
           <Modal onClose={() => setSelectedWork(null)}>
             <h2>{selectedWork.title}</h2>
-            <div style={{marginTop: '16px', whiteSpace: 'pre-line', textAlign:'start'}}>{selectedWork.description}</div>
+            <div style={{marginTop: '16px', textAlign:'start'}}>
+              <ReactMarkdown>{selectedWork.description || ''}</ReactMarkdown>
+            </div>
           </Modal>
         )}
       </div>

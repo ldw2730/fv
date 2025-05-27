@@ -5,7 +5,7 @@ const XRSolution: React.FC = () => {
   return (
     <section className="xr-solution" id="xr-solution">
       <div className="xr-content">
-        <h2 className="section-title">AR-SOLUTION</h2>
+        <h2 className="section-title">AR-CONTENTS</h2>
         <p className="section-description" style={{fontWeight: 'bold',color: '#4D4D4D'}}>
           FUTURE VISION은 스크린을 넘어서 사용자에게 다가가도록 돕습니다.<br />
           사용자에게 현실과 가상의 경계를 무너뜨리고 경험하게 하고 고객의 기억에 남기세요.

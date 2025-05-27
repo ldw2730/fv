@@ -1,3 +1,36 @@
+.category-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.category-bar button {
+  background: #f5ac96;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 6px 18px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-bar button:hover{
+  
+}
+
+.category-bar button.active {
+  background-color: #ff6b3d;;
+}
+
+.category-bar button span {
+  color: white;
+  margin-left: 4px;
+  font-weight: 700;
+}
 .pagination{
   margin-top: 40px;
 }
@@ -114,6 +147,7 @@
   height: 95%;
   min-width: 200px;
     min-height: 200px;
+    cursor: pointer;
 }
 
 .work-item:hover {
@@ -185,6 +219,12 @@
 
 /* 모바일 디바이스 */
 @media (max-width: 768px) {
+  .modal-content{
+  }
+  .view-more{
+    float: none;
+    width: 100%;
+  }
   .work {
     padding: 3rem 1rem;
   }
@@ -243,4 +283,32 @@
   .work-slider {
     margin: 1.5rem 0;
   }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  width:80%;
+  height: 80%;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+.modal-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 } 

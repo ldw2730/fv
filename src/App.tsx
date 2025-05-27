@@ -8,6 +8,8 @@ import Contact from './components/Contact/Contact';
 import './App.css';
 import Paragraph from './components/Paragraph/Pragraph';
 import Footer from './components/Footer/Footer';
+import { Buffer } from 'buffer';
+window.Buffer = Buffer;
 
 function App() {
   return (
